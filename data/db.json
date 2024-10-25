@@ -1,0 +1,19 @@
+{
+  "mydata": [
+    {
+      "id": "deea",
+      "price": 200,
+      "title": "meet"
+    },
+    {
+      "id": "d0d4",
+      "price": 400,
+      "title": "carrot"
+    },
+    {
+      "id": "b815",
+      "price": 300,
+      "title": "sallamon"
+    }
+  ]
+}

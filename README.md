@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Social Network Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo](./public/img/Screen%20Shot%202024-10-26%20at%2000.28.19.png) <!-- Add your logo path here -->
+![Logo](./public/img/Screen%20Shot%202024-10-26%20at%2000.29.07.png)
+![Logo](./public/img/Screen%20Shot%202024-10-26%20at%2000.29.43.png)
+![Logo](./public/img/Screen%20Shot%202024-10-26%20at%2000.29.49.png)
+![Logo](./public/img/Screen%20Shot%202024-10-26%20at%2000.30.06.png)
+## Overview
 
-## Available Scripts
+The Social Network Application is an interactive web application built with **React** and **Material-UI** to provide a smooth and engaging user interface. The project aims to enable users to interact and share content with friends, facilitating effective communication.
 
-In the project directory, you can run:
+## Purpose
 
-### `npm start`
+The goal of this application is to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Provide a social platform for users to share their content.
+- Enhance interaction among friends through various social features.
+- Offer an easy-to-use and responsive user interface.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Post Display**: Attractive display of user posts.
+- **Content Interaction**: Options to favorite, share content, and comment.
+- **Friends List**: Show currently online friends.
+- **Direct Messaging**: Ability to communicate with friends via messages.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Components
 
-### `npm run build`
+### 1. Posts
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A component that displays a card for each user with options to share and like.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```javascript
+import { Posts } from './Posts';
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+function App() {
+  return (
+    <div>
+      <Posts />
+    </div>
+  );
+}
